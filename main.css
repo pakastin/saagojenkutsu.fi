@@ -139,8 +139,8 @@ header * {
   opacity: 0;
 }
 .buy {
-  margin-top: 12rem;
-  margin-bottom: 9rem;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
   text-align: center;
 }
 .buy p {
@@ -151,7 +151,12 @@ header * {
   margin: 0 auto;
   padding: 0.75rem 1.5rem;
 }
-.buy p:hover {
+.buy a {
+  display: inline-block;
+  vertical-align: middle;
+  transition: transform 0.1s;
+}
+.buy a:hover {
   transform: scale(1.1, 1.1);
 }
 .ref {
