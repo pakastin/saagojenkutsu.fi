@@ -162,6 +162,13 @@ header * {
 .ref {
   padding-bottom: 3rem;
 }
+.rose {
+  position: absolute;
+  top: 2rem;
+  left: 50%;
+  width: 5rem;
+  margin-left: -2.5rem;
+}
 @media (max-width: 800px) {
   html {
     font-size: 75%;
@@ -175,6 +182,11 @@ header * {
   #teaser {
     width: 100%;
     height: 56.25vw;
+  }
+  .rose {
+    left: auto;
+    margin-left: 0;
+    right: 2rem;
   }
   .img {
     width: 100%;
