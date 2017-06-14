@@ -37,9 +37,6 @@
 
         <h3>Tarinana legenda, kirjana klassikko</h3>
 
-        <p>”Saagojen Kutsu on meriromaani, oikeastaan eepos. Sen voi panna 1 000 vuotta vanhojen Islannin saagojen hyllyyn, sen luettuaan noita vanhoja osaa lukea oikein.”</p>
-        <p class="ref"><b>Veijo Meri, kirjailija, 2008</b></p>
-
         <p>”Saagojen Kutsu on matka mieheen itseensä. Se on miehen tekemä tarina. Siitä ihmeellinen, että se vielä kirjaksi taottunakin hehkuu tekijänsä sisäistä vimmaa avata tottumuksiemme salvat. Vaatiessaan itseltään mies lahjoittaa muille. Kutsu on kuultu.”</p>
         <p class="ref"><b>Kalle Holmberg, ohjaaja, 2003</b></p>
 
@@ -57,8 +54,8 @@
           <div class="carousel_img" style="background-image: url(img/3.jpg);"></div>
         </div>
         <div class="buy">
-          <a href="http://www.adlibris.com/fi/aanikirja/avoveneella-islantiin-9789510429617" target="_blank"><img src="img/adlibris.svg" style="padding: 1.5rem"></a>
-          <a href="https://kirja.elisa.fi/aanikirja/avoveneella-islantiin-saagojen-kutsu" target="_blank"><img src="img/elisakirja.png" style="padding: 1.5rem"></a>
+          <a href="http://www.adlibris.com/fi/aanikirja/avoveneella-islantiin-9789510429617" onclick="trackOutboundLink('http://www.adlibris.com/fi/aanikirja/avoveneella-islantiin-9789510429617'); return false;" target="_blank"><img src="img/adlibris.svg" style="padding: 1.5rem"></a>
+          <a href="https://kirja.elisa.fi/aanikirja/avoveneella-islantiin-saagojen-kutsu" onclick="trackOutboundLink('https://kirja.elisa.fi/aanikirja/avoveneella-islantiin-saagojen-kutsu'); return false;" target="_blank"><img src="img/elisakirja.png" style="padding: 1.5rem"></a>
         </div>
       </div>
     </section>
@@ -92,7 +89,14 @@
 
       ga('create', 'UA-2186928-32', 'auto');
       ga('send', 'pageview');
-
+    </script>
+    <script>
+      var trackOutboundLink = function(url) {
+         ga('send', 'event', 'outbound', 'click', url, {
+           'transport': 'beacon',
+           'hitCallback': function(){document.location = url;}
+         });
+      }
     </script>
   </body>
 </html>
