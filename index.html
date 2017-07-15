@@ -27,13 +27,13 @@
       <div class="buy">
         <p>Lue</p>
         <div>
-          <a href="http://www.suomalainen.com/webapp/wcs/stores/servlet/fi/skk/saagojen-kutsu-p9789526744704--77" onclick="trackOutboundLink(event, 'http://www.suomalainen.com/webapp/wcs/stores/servlet/fi/skk/saagojen-kutsu-p9789526744704--77');" target="_blank"><img src="img/suomalainen.png" style="padding: 1.5rem; height: 6.25rem;"></a>
-          <a href="https://www.sskk.fi/saagojen-kutsu.html" onclick="trackOutboundLink(event, 'https://www.sskk.fi/saagojen-kutsu.html');"><img src="img/sskk.png" style="padding: 1.5rem; height: 6.25rem;"></a>
+          <a href="http://www.suomalainen.com/webapp/wcs/stores/servlet/fi/skk/saagojen-kutsu-p9789526744704--77" onclick="trackOutboundLink('http://www.suomalainen.com/webapp/wcs/stores/servlet/fi/skk/saagojen-kutsu-p9789526744704--77');" target="_blank"><img src="img/suomalainen.png" style="padding: 1.5rem; height: 6.25rem;"></a>
+          <a href="https://www.sskk.fi/saagojen-kutsu.html" onclick="trackOutboundLink('https://www.sskk.fi/saagojen-kutsu.html');"><img src="img/sskk.png" style="padding: 1.5rem; height: 6.25rem;"></a>
         </div>
         <p>Kuuntele</p>
         <div>
-          <a href="http://www.adlibris.com/fi/aanikirja/avoveneella-islantiin-9789510429617" onclick="trackOutboundLink(event, 'http://www.adlibris.com/fi/aanikirja/avoveneella-islantiin-9789510429617');" target="_blank"><img src="img/adlibris.svg" style="padding: 1.5rem"></a>
-          <a href="https://kirja.elisa.fi/aanikirja/avoveneella-islantiin-saagojen-kutsu" onclick="trackOutboundLink(event, 'https://kirja.elisa.fi/aanikirja/avoveneella-islantiin-saagojen-kutsu');" target="_blank"><img src="img/elisakirja.png" style="padding: 1.5rem"></a>
+          <a href="http://www.adlibris.com/fi/aanikirja/avoveneella-islantiin-9789510429617" onclick="trackOutboundLink('http://www.adlibris.com/fi/aanikirja/avoveneella-islantiin-9789510429617');" target="_blank"><img src="img/adlibris.svg" style="padding: 1.5rem"></a>
+          <a href="https://kirja.elisa.fi/aanikirja/avoveneella-islantiin-saagojen-kutsu" onclick="trackOutboundLink('https://kirja.elisa.fi/aanikirja/avoveneella-islantiin-saagojen-kutsu');" target="_blank"><img src="img/elisakirja.png" style="padding: 1.5rem"></a>
         </div>
       </div>
       <div class="wrapper">
@@ -65,13 +65,13 @@
         <div class="buy">
           <p>Lue</p>
           <div>
-            <a href="http://www.suomalainen.com/webapp/wcs/stores/servlet/fi/skk/saagojen-kutsu-p9789526744704--77" onclick="trackOutboundLink(event, 'http://www.suomalainen.com/webapp/wcs/stores/servlet/fi/skk/saagojen-kutsu-p9789526744704--77');" target="_blank"><img src="img/suomalainen.png" style="padding: 1.5rem; height: 6.25rem;"></a>
-            <a href="https://www.sskk.fi/saagojen-kutsu.html" onclick="trackOutboundLink(event, 'https://www.sskk.fi/saagojen-kutsu.html');"><img src="img/sskk.png" style="padding: 1.5rem; height: 6.25rem;"></a>
+            <a href="http://www.suomalainen.com/webapp/wcs/stores/servlet/fi/skk/saagojen-kutsu-p9789526744704--77" onclick="trackOutboundLink('http://www.suomalainen.com/webapp/wcs/stores/servlet/fi/skk/saagojen-kutsu-p9789526744704--77');" target="_blank"><img src="img/suomalainen.png" style="padding: 1.5rem; height: 6.25rem;"></a>
+            <a href="https://www.sskk.fi/saagojen-kutsu.html" onclick="trackOutboundLink('https://www.sskk.fi/saagojen-kutsu.html');"><img src="img/sskk.png" style="padding: 1.5rem; height: 6.25rem;"></a>
           </div>
           <p>Kuuntele</p>
           <div>
-            <a href="http://www.adlibris.com/fi/aanikirja/avoveneella-islantiin-9789510429617" onclick="trackOutboundLink(event, 'http://www.adlibris.com/fi/aanikirja/avoveneella-islantiin-9789510429617');" target="_blank"><img src="img/adlibris.svg" style="padding: 1.5rem"></a>
-            <a href="https://kirja.elisa.fi/aanikirja/avoveneella-islantiin-saagojen-kutsu" onclick="trackOutboundLink(event, 'https://kirja.elisa.fi/aanikirja/avoveneella-islantiin-saagojen-kutsu');" target="_blank"><img src="img/elisakirja.png" style="padding: 1.5rem"></a>
+            <a href="http://www.adlibris.com/fi/aanikirja/avoveneella-islantiin-9789510429617" onclick="trackOutboundLink('http://www.adlibris.com/fi/aanikirja/avoveneella-islantiin-9789510429617');" target="_blank"><img src="img/adlibris.svg" style="padding: 1.5rem"></a>
+            <a href="https://kirja.elisa.fi/aanikirja/avoveneella-islantiin-saagojen-kutsu" onclick="trackOutboundLink('https://kirja.elisa.fi/aanikirja/avoveneella-islantiin-saagojen-kutsu');" target="_blank"><img src="img/elisakirja.png" style="padding: 1.5rem"></a>
           </div>
         </div>
       </div>
@@ -108,12 +108,10 @@
       ga('send', 'pageview');
     </script>
     <script>
-      function trackOutboundLink (event, url) {
+      function trackOutboundLink (url) {
         ga('send', 'event', 'outbound', 'click', url, {
-          'transport': 'beacon',
-          'hitCallback': function(){window.open(url);}
+          'transport': 'beacon'
         });
-        event.preventDefault();
       }
     </script>
   </body>
