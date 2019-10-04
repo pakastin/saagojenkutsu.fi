@@ -36,7 +36,8 @@
         <p><i>Avoveneellä Islantiin – Saagojen Kutsu</i> on ainutlaatuinen matka merenkulun historiassa. Kippari Pekka Piri ja navigaattori Matti Pulli toteuttivat sen vuonna 1994.</p>
         <p>Lukija kokee rankan ja riemukkaan, vakavan ja hirtehisen seikkailun Itämeren, Pohjanmeren ja Pohjois-Atlantin kuohuissa. Matka on ponnistusta ja luottamusta, sitkeyttä ja kumppanuutta, rajojen rikkomisen väkevää riemua. Kipparin unelma toteutuu pienen m/y FinnFasterin rantautuessa Kaakkois-Islannin Höfnin kalastajakylän laituriin 23 vuorokauden jälkeen.</p>
 
-        <iframe id="teaser" width="560" height="315" src="https://www.youtube.com/embed/ax02vUFGDQU?showinfo=0&rel=0" frameborder="0" allowfullscreen></iframe>
+        <div id="teaser" width="560" height="315"></div>
+        <!-- <iframe id="teaser" width="560" height="315" src="https://youtube.com/embed/ax02vUFGDQU?modestbranding=1&controls=0&showinfo=0" frameborder="0" allowfullscreen></iframe> -->
 
         <h3>Tarinana legenda, kirjana klassikko</h3>
 
@@ -84,6 +85,35 @@
           }
           change();
         }, 3500);
+      }
+    </script>
+    <script>
+      // 2. This code loads the IFrame Player API code asynchronously.
+      var tag = document.createElement('script');
+
+      tag.src = "https://www.youtube.com/iframe_api";
+      var firstScriptTag = document.getElementsByTagName('script')[0];
+      firstScriptTag.parentNode.insertBefore(tag, firstScriptTag);
+
+      // 3. This function creates an <iframe> (and YouTube player)
+      //    after the API code downloads.
+      var player;
+      function onYouTubeIframeAPIReady() {
+        player = new YT.Player('teaser', {
+          height: '315',
+          width: '560',
+          videoId: 'ax02vUFGDQU',
+          playerVars: {
+            autoplay: 0,
+            controls: 0,
+            disablekb: 1,
+            fs: 0,
+            modestbranding: 1,
+            playsinline: 1,
+            rel: 0,
+            showinfo: 0
+          }
+        });
       }
     </script>
     <script>
